@@ -5,7 +5,7 @@ SET GLOBAL time_zone = "Europe/Riga";
 SET time_zone = "+03:00";
 SET @@session.time_zone = "+03:00";
 
-
+drop table if exists users;
 CREATE TABLE Users (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 login VARCHAR(100) NOT NULL,
@@ -18,3 +18,4 @@ creation_date TIMESTAMP,
 last_change_date TIMESTAMP,
 last_access_date TIMESTAMP
 );
+

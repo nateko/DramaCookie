@@ -5,6 +5,7 @@ import java.time.temporal.ChronoUnit;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import com.nexyliya.dramacookie.enums.Role;
@@ -21,7 +22,8 @@ import lombok.ToString;
 @Getter @Setter @NoArgsConstructor @ToString @EqualsAndHashCode
 public class User {
 
-	@Id @GeneratedValue private Long id;
+	@Id @GeneratedValue(strategy=GenerationType.AUTO) 
+	private Long id;
 	private @NonNull String login;
 	private @NonNull String email;
 	private @NonNull String password;
