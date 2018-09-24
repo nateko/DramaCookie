@@ -19,3 +19,24 @@ last_change_date TIMESTAMP,
 last_access_date TIMESTAMP
 );
 
+drop table if exists profile;
+create table profile (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+user_id int(6) UNSIGNED,
+first_name VARCHAR(100) NOT NULL,
+last_name VARCHAR(100) NOT NULL,
+birth_date date,
+about_me text,
+gender varchar(6),
+profile_picture text,
+FOREIGN KEY (user_id)
+        REFERENCES users(id)
+        ON DELETE CASCADE
+);
+
+drop table if exists tags;
+create table tags (
+id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) unicode,
+counter int(6) unsigned
+);
