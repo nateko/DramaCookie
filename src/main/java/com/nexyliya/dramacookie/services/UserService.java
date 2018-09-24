@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.nexyliya.dramacookie.converters.UserConverter;
 import com.nexyliya.dramacookie.dtos.UserDto;
-import com.nexyliya.dramacookie.entities.user.User;
+import com.nexyliya.dramacookie.entities.User;
 import com.nexyliya.dramacookie.repositories.UserRepository;
 
 @Service

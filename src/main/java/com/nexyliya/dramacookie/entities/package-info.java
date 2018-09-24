@@ -5,4 +5,4 @@
  * @author Nataly
  *
  */
-package com.nexyliya.dramacookie.entities.user;
+package com.nexyliya.dramacookie.entities;

@@ -1,7 +1,7 @@
 package com.nexyliya.dramacookie.converters;
 
 import com.nexyliya.dramacookie.dtos.UserDto;
-import com.nexyliya.dramacookie.entities.user.User;
+import com.nexyliya.dramacookie.entities.User;
 
 public class UserConverter {
 
